@@ -2,10 +2,10 @@
 #01/10/14
 #this program will change the date in the normal formt
 
-date = str(input("Please enter a date in the format 12 05 03 (must be between 1931 and 2030): "))
-day = int(date[0] + date[1])
-month = int(date[3] + date[4])
-year = int(date[6] + date[7])
+date_input = input("Please enter a date in the format DD/MM/YY (must be between 1931 and 2030): ")
+day = int(date_input[0] + date_input[1])
+month = int(date_input[3] + date_input[4])
+year = int(date_input[6] + date_input[7])
 
 if day == 1:
     day = str(day) + "st"
@@ -13,6 +13,14 @@ elif day == 2:
     day = str(day) + "nd"
 elif day == 3:
     day = str(day) + "rd"
+elif day = 21:
+    day = str(day) + "st"
+elif day = 22:
+    day = str(day) + "nd"
+elif day = 23:
+    day = str(day) + "rd"
+elif day = 31:
+    day = str(day) + "st"
 else:
     day = str(day) + "th"
 
